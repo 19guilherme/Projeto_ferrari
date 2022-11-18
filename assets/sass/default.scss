@@ -1,6 +1,6 @@
 *{
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; // Suaviza a barra de rolagem
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
@@ -14,9 +14,12 @@ body{
   margin: 0;
   flex-direction: column;
   background-color: var(--white);
+  > main{ // ALTURA MINIMA DO MAIN
+    min-height: calc(100vh - 400px);
+  }
 }
 
-hr{
+hr{ // DEFINIDO PADRÃO hr
   &.divider{
     background-color: var(--gray-3);
     height: 1px;
@@ -24,5 +27,13 @@ hr{
     margin: 3em 0;
     border: none;
     align-self: center;
+  }
+}
+
+@media(min-width: 1200px){
+  body{
+    > main{ // ALTURA MINIMA DO MAIN
+      min-height: calc(100vh - 341px);
+    }
   }
 }
