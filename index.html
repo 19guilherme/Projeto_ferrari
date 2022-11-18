@@ -30,20 +30,26 @@
   <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
   <title>Ferrari - Hcode</title>
 </head>
-<body>
+<body class="open-menu">
   <header id="header">
 
     <div class="overlay"></div>
-    <a href="index.html#home"><img src="/assets/images/ferrari-logo.svg" class="logo" alt="Logo Ferrari"></a>
+    <a href="index.html#home"><img src="assets/images/ferrari-logo.svg" class="logo" alt="Logo Ferrari"></a>
     <button type="button" id="btn-open">
-      <!-- foto botão menu -->
+      <!-- foto botão menu ABRE-->
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3 22H29V20H3V22ZM3 17H29V15H3V17ZM3 10V12H29V10H3Z" fill="black"/>
-        </svg>
+      <path d="M3 22H29V20H3V22ZM3 17H29V15H3V17ZM3 10V12H29V10H3Z" fill="black"/>
+      </svg>
     </button>
 
     <div class="menu">
       <nav>
+        <button type="button" id="btn-close">
+          <!-- foto botão menu FECHA-->
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="black"/>
+            </svg>
+        </button>
         <ul>
           <li><a href="index.html#home">Home</a></li>
           <li><a href="index.html#service">Revisão</a></li>

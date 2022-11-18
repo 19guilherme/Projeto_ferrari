@@ -1,0 +1,157 @@
+#header{
+  min-width: 320px;
+  width: 100%;
+  height: 60px;
+  background-color: var(--gray-5);
+  position: relative;
+  z-index: 3;
+
+  /* Faixa da bandeira italia*/
+  .italy{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    background-color: var(--white);
+    border: none;
+    border-top: 6px solid var(--green);
+    border-bottom: 6px solid var(--red);
+    height: 18px;
+    margin: 0;
+  }
+  .logo{ // POSICIONANDO O LOGO NO CENTRO
+    position: absolute;
+    transition: all 1s ease-in-out;
+    top: 15px;
+    width: 72px;
+    right: calc(50vw - 36px);
+    z-index: 5;
+  }
+
+  /* MENU ESCONDIDO */
+  .menu{
+    transition: right .5s ease-in-out;
+    width: 300px;
+    height: 100vh;
+    padding-bottom: 50px;
+    background-color: var(--gray-7);
+    position: fixed;
+    right: -300px;
+    top: 0;
+    z-index: 4;
+    flex-direction: column;
+    justify-content: space-between;
+    nav{
+      flex-direction: column; // ????? NÃO ESTÁ PEGANDO !
+      ul{
+        margin: 0;  // ELIMINA A MARGEM (PADRÃO)
+        padding: 0; // ELIMINA A PADDING (PADRÃO)
+        margin-top: 251px;
+        flex-direction: column;
+        li{
+          padding: 14px 0;
+          list-style: none;
+          justify-content: center;
+
+          a{
+            text-decoration: none;
+            color: var(--gray-0);
+          }
+          &.hide-guest, &.divider {
+            display: none;
+          }
+          hr{
+            margin: 15px 0;
+          }
+        }
+      }
+    }
+    .footer{  //RODAPE MENU
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      > div{
+        display: none; // OCULTA A ÁREA DE CADASTRO
+        padding: 15px;
+        width: 100%;
+        align-items: center;
+        picture{
+          margin-right: 10px;
+          img{
+            height: 40px;
+            width: 40px;
+            border: 50%;
+          }
+        }
+        > div{
+          flex-direction: column;
+          flex: 1;
+        }
+        a{
+          color: var(--dark-0);
+          text-decoration: none;
+          font-size: 16px;
+          small{
+            color: var(--gray-2);
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .btn-register{  // BOTÃO REGISTRO
+      margin: 20px;
+      width: calc(300px - 40px);
+      min-width: 130px;
+      border: none;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      outline: none;
+      cursor: pointer;
+      background-color: var(--green);
+      color: var(--white);
+      &:hover{
+        background-color: var(--green-hover);
+      }
+      &:active{
+        background-color: var(--green-hover);
+      }
+    }
+  }
+  button{
+    background: none;
+    border: none;
+    outline: none; //linha desenhada fora da borda
+    padding: 13px;
+  }
+  #btn-open, #btn-close{
+    position: absolute;
+    right: 0;
+  }
+}  
+
+.open-menu{ // AÇÃO QUE ACONTECE QUANDO O MENU ABRE
+  overflow: hidden;
+  #header{
+    .overlay{   //PLANO DE FUNDO(MEIO-ESCURO)
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--dark-1);
+      z-index: 4;
+    }
+    .menu{ // TELA APARECE
+      right: 0;
+    }
+    .logo{  // lOGO CENTRALIZA NO CENTRO DO MENU
+      right: 87px;
+      width: 120px;
+    }
+  }
+}
