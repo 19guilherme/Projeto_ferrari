@@ -87,10 +87,62 @@
     <hr class="italy" />
   </header>
 
-  <main>
 
-  </main>
+  <section class="page" id="profile">
+    <header>
+      <h1>Editar Dados</h1>
+    </header>
+    
+    <main>
+      <header class="page-title">
+        <h2>Dados Pessoais</h2>
+        <hr>
+      </header>
 
+      <!-- readonly - o elemento passará a ser somente para leitura, não poderá ser mais editavel ! -->
+      <form>
+        <div class="field">
+          <input type="text" name="name" id="name" required value="Guilherme">
+          <label for="name">Nome Completo</label>
+        </div>
+
+        <div class="field">
+          <input type="email" name="email" id="email" required>
+          <label for="email">E-mail</label>
+        </div>
+
+        <div class="field">
+          <input type="date" name="birth-at" id="birth-at" required>
+          <label for="birth-at">Data de Nascimento</label>
+        </div>
+
+        <div class="fields">
+          <div class="field">
+            <input type="text" name="document" id="document" required>
+            <label for="document">Documento</label>
+          </div>
+  
+          <div class="field">
+            <input type="tel" name="phone" id="phone">
+            <label for="phone">Telefone</label>
+          </div>
+        </div>
+
+        <div class="toast sucess"> <!-- NOTIFICAÇÃO DE ALERTA (SUCESS / DANGER) (open - ABRE A NOTIFICAÇÃO) --> 
+          Dados salvos com sucesso!
+          <button type="button" class="close">
+            <span>&times;</span>
+          </button>
+        </div>
+
+        <footer class="fixed">
+        
+          <button type="submit">Salvar</button>
+
+        </footer>
+      </form>
+    </main>
+  </section>
 
   <script>
     //ADCIONAR FUNÇÃO DE ABRE E FECHA MENU
