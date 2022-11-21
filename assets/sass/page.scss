@@ -72,7 +72,26 @@ header{ // UTILZAR EM OUTRAS PAGINAS
       @include button-black;
     }
   }
-
+  &.blue{
+    > header{
+      background-color: var(--blue);
+    }
+    footer.fixed{
+      button[type=submit], a.black{
+        @include button-blue;
+      }
+    }
+  }
+  &.green{
+    > header{
+      background-color: var(--green);
+    }
+    footer.fixed{
+      button[type=submit], a.black{
+        @include button-green;
+      }
+    }
+  }
 }
 
 @media (min-width: 1200px){
@@ -83,6 +102,18 @@ header{ // UTILZAR EM OUTRAS PAGINAS
         min-height: 160px;
         h1{
           font-size: 32px;
+        }
+    }
+    footer.fixed{
+      justify-content: flex-start;
+      button + button, a + a, button + a, a + button{ // QUANDO ESTIVER MAIS DE 1 BOTÃO
+        margin-right: var(--space);
+      }
+      button, a{
+        order: 1;
+        &:first-child{ // 1º BOTÃO FICA NA ORDEM 2, INVERTE AS POSIÇÕES
+          order: 2;
+        }
       }
     }
   }
