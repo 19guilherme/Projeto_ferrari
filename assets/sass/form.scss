@@ -9,6 +9,7 @@ form{
   .field{
     position: relative;
     flex-direction: column;
+    width: 100%;
     margin-bottom: var(--space);
     label{
       color: var(--gray-3);

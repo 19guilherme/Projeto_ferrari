@@ -1,4 +1,4 @@
-.contact{
+#contact{
   flex-direction: column;
   > h2{
     font-size: 27px;
@@ -57,7 +57,7 @@
 }
 
 @media (min-width: 1200px) {
-  .contact{
+  #contact{
     > h2{
       font-size: 60px;
     }
@@ -70,7 +70,7 @@
           max-width: unset;
           textarea{
             min-height: 265px;
-            // resize: vertical;
+            resize: vertical;
           }
         }
         #map{
