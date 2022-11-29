@@ -31,6 +31,7 @@
   <title>Ferrari - Hcode</title>
 </head>
 <body class=""> <!-- open-menu -->
+
   <header id="header">
 
     <div class="overlay">
@@ -87,138 +88,77 @@
     <hr class="italy" />
   </header>
 
-
-  <section class="page blue" id="schedules-summary">
-    
+  <section id="schedules-address" class="page blue">
     <header>
-      <h1>Resumo do Pedido <small>Confira os detalhes do pedido</small></h1>
+      <h1>Endereço de cobrança</h1>
     </header>
-    
     <main>
-      <form action="schedules-complete.html">
-        <div class="field">
-          <input type="text" name="payment" id="payment" readonly value="Cartão de Crédito">
-          <label for="payment">Forma de Pagamento</label>
-        </div>
+      <form action="schedules-summary.html">
 
-        <div class="field">
-          <input type="text" name="creditcard" id="creditcard" readonly value="****1234">
-          <label for="creditcard">Cartão Final</label>
-        </div>
+        <a href="schedules-address-create.html" class="btn-create">Novo</a>
+        <hr/>
 
-        <div class="field">
-          <input type="text" name="installments" id="installments" readonly value="À vista">
-          <label for="installments">Parcelas</label>
-        </div>
+        <div class="addresses">
 
-        <div class="field">
-          <input type="text" name="services" id="services" readonly value="1">
-          <label for="services">Quantidade de Serviços</label>
-        </div>
+          <label>
+            <div>
+              <input type="radio" name="address" value="1">
+              <div class="circle">
+                <div></div>
+              </div>
+              <address>
+                <strong>Av. Paulista,500</strong>,
+                Bela vista<br/>
+                São Paulo - SP<br/>
+                01310-100
+              </address>
+            </div>
+            <a href="schedules-address-update.html" class="btn-update">Editar</a>
+          </label>
 
-        <div class="field">
-          <input type="text" name="schedule_at" id="schedule_at" readonly value="24 de novembro de 2022 às 9:00">
-          <label for="schedule_at">Data do Serviço</label>
-        </div>
+          <label>
+            <div>
+              <input type="radio" name="address" value="1">
+              <div class="circle">
+                <div></div>
+              </div>
+              <address>
+                <strong>Av. Paulista,500</strong>,
+                Bela vista<br/>
+                São Paulo - SP<br/>
+                01310-100
+              </address>
+            </div>
+            <a href="schedules-address-update.html" class="btn-update">Editar</a>
+          </label>
 
-        <div class="field">
-          <input type="text" name="total" id="total" readonly value="R$ 400,00">
-          <label for="total">Valor Total</label>
-        </div>
+          <label>
+            <div>
+              <input type="radio" name="address" value="1">
+              <div class="circle">
+                <div></div>
+              </div>
+              <address>
+                <strong>Av. Paulista,500</strong>,
+                Bela vista<br/>
+                São Paulo - SP<br/>
+                01310-100
+              </address>
+            </div>
+            <a href="schedules-address-update.html" class="btn-update">Editar</a>
+          </label>
 
+        </div>
         <footer class="fixed">
           <a href="schedules-payment.html">Voltar</a>
-
-          <button type="submit">Continuar</button>
-
+          <button type="submit">Cadastrar</button>
         </footer>
 
       </form>
     </main>
 
-    <aside class=""> <!-- open -->
-      <header>Resumo</header>
-
-      <section>
-        <table>
-          <tbody>
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-            
-          </tbody>
-        </table>
-      </section>
-
-
-      <footer>
-        <button type="button" id="btn-sumart-toggle">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7.41" viewBox="0 0 12 7.41"><path d="M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z" transform="translate(-6 16) rotate(-90)" fill="#707070"/></svg>
-        </button>
-
-        <div>
-          <span>Total</span>
-          <span class="total">R$0,00</span>
-        </div>
-      </footer>
-    </aside>
-
   </section>
+
+
 </body>
 </html>  

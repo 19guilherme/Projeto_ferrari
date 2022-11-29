@@ -18,12 +18,9 @@
   }
 }
 
-@media (min-width: 992px){
+@media (min-width: 1200px){
   #schedules-address-form{
     main{
-      form{
-        width: 600px;
-      }
       .fields{
         flex-direction: column;
         &.address-number{
