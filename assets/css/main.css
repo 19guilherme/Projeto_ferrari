@@ -1721,5 +1721,217 @@ header.page-title hr {
     width: 398px;
   }
 }
+#change-photo form {
+  align-items: center;
+  display: flex;
+}
+#change-photo form #photo {
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+}
+#change-photo form #file {
+  display: none;
+}
+#change-photo form .choose-photo {
+  margin: var(--space) 0;
+  width: 250px;
+}
+#change-photo form.crooping img {
+  height: auto;
+  border-radius: 0;
+  margin-top: 0;
+}
+
+#schedules-complete main p {
+  margin-left: var(--space);
+  margin-top: 0;
+  font-size: 22px;
+  color: var(--gray-0);
+}
+#schedules-complete main p small {
+  display: block;
+  font-size: 16px;
+}
+#schedules-complete main footer.fixed {
+  justify-content: center;
+}
+#schedules-complete main footer.fixed a {
+  min-width: 130px;
+  border: none;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  border-radius: var(--border-radius);
+  background-color: var(--green);
+  color: var(--white);
+  padding: 0 var(--space);
+}
+#schedules-complete main footer.fixed a:hover {
+  background-color: var(--black-10);
+}
+#schedules-complete main footer.fixed a:active {
+  background-color: var(--black-75);
+}
+#schedules-complete main footer.fixed a:hover {
+  background-color: var(--green-hover);
+}
+#schedules-complete main footer.fixed a:active {
+  background-color: var(--green-active);
+}
+
+@media (min-width: 1200px) {
+  #schedules-complete main footer.fixed {
+    justify-content: flex-start;
+  }
+}
+#time-options h3 {
+  margin: var(--space) 0;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#time-options .options {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+#time-options .options label {
+  width: calc(50% - 20px);
+  margin-bottom: 10px;
+}
+#time-options .options label span {
+  display: flex;
+  width: 100%;
+  min-width: 130px;
+  border: none;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  border-radius: var(--border-radius);
+  background-color: var(--gray-10);
+  color: var(--dark-0);
+  margin-right: var(--space);
+}
+#time-options .options label span:hover {
+  background-color: var(--black-10);
+}
+#time-options .options label span:active {
+  background-color: var(--black-75);
+}
+#time-options .options label input {
+  display: none;
+}
+#time-options .options label input:checked + span {
+  background-color: var(--blue);
+  color: var(--white);
+}
+#time-options .options label input:active + span {
+  background-color: var(--blue-active);
+}
+#time-options footer {
+  justify-content: flex-start;
+}
+#time-options footer a {
+  margin-right: var(--space);
+}
+
+@media (min-width: 992px) {
+  #time-options h3 {
+    font-size: 22px;
+  }
+  #time-options.page form {
+    min-width: 1000px;
+  }
+  #time-options .options {
+    justify-content: flex-start;
+  }
+  #time-options .options label {
+    width: calc(25% - 10px);
+  }
+}
+#schedules-address-form main {
+  margin-top: var(--space);
+}
+#schedules-address-form main .fields.zipcode {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#schedules-address-form main .fields.zipcode .field {
+  width: calc(50% - 10px);
+}
+#schedules-address-form main .fields.zipcode #btn-search {
+  min-width: 130px;
+  border: none;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  border-radius: var(--border-radius);
+  background-color: var(--gray-3);
+  color: var(--gray-0);
+  height: 69px;
+}
+#schedules-address-form main .fields.zipcode #btn-search:hover {
+  background-color: var(--black-10);
+}
+#schedules-address-form main .fields.zipcode #btn-search:active {
+  background-color: var(--black-75);
+}
+#schedules-address-form main .fields.zipcode #btn-search:hover {
+  background-color: var(--gray-hover);
+}
+#schedules-address-form main .fields.zipcode #btn-search:active {
+  background-color: var(--gray-active);
+}
+
+@media (min-width: 992px) {
+  #schedules-address-form main form {
+    width: 600px;
+  }
+  #schedules-address-form main .fields {
+    flex-direction: column;
+  }
+  #schedules-address-form main .fields.address-number .field {
+    width: 100%;
+  }
+  #schedules-address-form main .fields.address-number .field.first-child {
+    flex: 1;
+    width: initial;
+  }
+  #schedules-address-form main .fields.address-number .field:last-child {
+    width: 100px;
+  }
+  #schedules-address-form main .fields > .fields {
+    flex-direction: row;
+  }
+  #schedules-address-form main .fields > .fields .field {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
