@@ -142,11 +142,8 @@
 
               </span>
               <span class="price">R$200,00</span>
-
-            </div>
-
+              </div>
           </label>
-
         </div>
 
         <footer class="fixed">
@@ -158,50 +155,25 @@
 
       </form>
     </main>
-    <aside class=""> <!-- open -->
+    <aside class="" id="aside"> <!-- open -->
       <header>Resumo</header>
 
       <section>
         <table>
-          <tbody>
+          <tbody>            
             <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
+              <td>Filtros</td>
+              <td class="price">R$ 200,00</td>
             </tr>
 
             <tr>
               <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
+              <td class="price">R$ 400,00</td>
             </tr>
 
             <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
+              <td>Revisão</td>
+              <td class="price">R$ 100,00</td>
             </tr>
             
           </tbody>
@@ -216,11 +188,21 @@
 
         <div>
           <span>Total</span>
-          <span class="total">R$0,00</span>
+          <span class="total">R$ 700,00</span>
         </div>
       </footer>
     </aside>
 
   </section>
+
+  <script>
+    const asideLateral = document.querySelector('#aside')
+
+      asideLateral.addEventListener('click', e => {
+        asideLateral.classList.toggle('open')
+    })
+  
+  
+  </script>
 </body>
 </html>  

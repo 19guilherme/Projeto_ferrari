@@ -2,6 +2,13 @@
   padding-bottom: var(--space);
   footer.fixed{
     justify-content: center;
+    align-items: center;
+    a{
+      &.black{
+        padding: 10px;
+      }
+      
+    }
   }
   ul{
     margin: 0;
@@ -77,7 +84,7 @@
         }
       }
       li + li{
-        margin: 0;
+        margin: 10px 0;
       }
     }
   }

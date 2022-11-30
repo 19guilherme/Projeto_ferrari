@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
   <title>Ferrari - Hcode</title>
 </head>
-<body class=""> <!-- open-menu -->
+<body class="" id="menu"> <!-- open-menu -->
   <header id="header">
 
     <div class="overlay">
@@ -173,65 +173,19 @@
       <section>
         <table>
           <tbody>
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
+            <td>Filtros</td>
+            <td class="price">R$ 200,00</td>
+          </tr>
 
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
+          <tr>
+            <td>Alinhamento</td>
+            <td class="price">R$ 400,00</td>
+          </tr>
 
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
+          <tr>
+            <td>Revisão</td>
+            <td class="price">R$ 100,00</td>
+          </tr>
             
           </tbody>
         </table>
@@ -245,11 +199,21 @@
 
         <div>
           <span>Total</span>
-          <span class="total">R$0,00</span>
+          <span class="total">R$ 700,00</span>
         </div>
       </footer>
     </aside>
 
   </section>
+
+  <script>
+    const card = document.querySelector('#credit-card')
+
+    card.addEventListener('click', e => {
+      card.classList.toggle('flipped')
+    })
+
+  </script>
+
 </body>
 </html>  

@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
   <title>Ferrari - Hcode</title>
 </head>
-<body class=""> <!-- open-menu -->
+<body class="" id="menu"> <!-- open-menu -->
   <header id="header">
 
     <div class="overlay">
@@ -279,8 +279,12 @@
   </footer>
 
   <script>
-    // ARRUMAR CORRETAMENTE A PARTE RESPONSIVA
-    // ADCIONAR FUNÇÃO DE ABRE E FECHA MENU
+    const menu = document.querySelector('#menu')
+      menu.addEventListener('click', e => {
+        menu.classList.toggle('open-menu')
+    })
+  
+  
   </script>
 </body>
 </html>

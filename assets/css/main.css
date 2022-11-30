@@ -239,7 +239,7 @@ form button:active {
 
 @media (min-width: 1200px) {
   form {
-    max-width: 400px;
+    max-width: 500px;
   }
   form .fields {
     flex-direction: row;
@@ -2056,6 +2056,10 @@ header.page-title hr {
 }
 #schedules footer.fixed {
   justify-content: center;
+  align-items: center;
+}
+#schedules footer.fixed a.black {
+  padding: 10px;
 }
 #schedules ul {
   margin: 0;
@@ -2147,6 +2151,9 @@ header.page-title hr {
   }
   #schedules ul li:first-child > section > div label {
     display: flex;
+  }
+  #schedules ul li + li {
+    margin: 10px 0;
   }
 }
 

@@ -122,7 +122,7 @@
         </div>
 
         <div class="field">
-          <input type="text" name="total" id="total" readonly value="R$ 400,00">
+          <input type="text" name="total" id="total" readonly value="R$ 700,00">
           <label for="total">Valor Total</label>
         </div>
 
@@ -136,71 +136,25 @@
       </form>
     </main>
 
-    <aside class=""> <!-- open -->
+    <aside class="" id="aside"> <!-- open -->
       <header>Resumo</header>
 
       <section>
         <table>
           <tbody>
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
+            <td>Filtros</td>
+            <td class="price">R$ 200,00</td>
+          </tr>
 
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
+          <tr>
+            <td>Alinhamento</td>
+            <td class="price">R$ 400,00</td>
+          </tr>
 
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
-
-            <tr>
-              <td>Alinhamento</td>
-              <td class="price">R$ 0,00</td>
-            </tr>
+          <tr>
+            <td>Revisão</td>
+            <td class="price">R$ 100,00</td>
+          </tr>
             
           </tbody>
         </table>
@@ -214,11 +168,21 @@
 
         <div>
           <span>Total</span>
-          <span class="total">R$0,00</span>
+          <span class="total">R$ 700,00</span>
         </div>
       </footer>
     </aside>
 
   </section>
+
+  <script>
+    const asideLateral = document.querySelector('#aside')
+
+    asideLateral.addEventListener('click', e => {
+      asideLateral.classList.toggle('open')
+})
+
+
+  </script>
 </body>
 </html>  
